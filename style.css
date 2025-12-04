@@ -237,6 +237,7 @@ header.hero {
   font-size: 2rem;
   margin-bottom: 2.5rem;
   font-weight: 700;
+  text-align: center;
 }
 .servicos-lista {
   display: grid;
@@ -296,6 +297,14 @@ header.hero {
   font-size: 2rem;
   margin-bottom: 2.5rem;
   font-weight: 700;
+  text-align: center;
+}
+
+.portfolio p {
+  text-align: center;
+  color: var(--cinza-texto);
+  margin-bottom: 40px;
+  font-size: 1.1rem;
 }
 
 .portfolio-grid {
@@ -562,3 +571,72 @@ header.hero {
 }
 
 /* animações removidas para manter estilo simples */
+
+/* --- BREAKPOINT PARA TABLETS (Largura mínima de 768px) --- */
+@media (min-width: 768px) {
+    
+    /* Regras para tablets, como 2 ou 3 colunas em serviços */
+    
+    /* Exemplo: Serviços em 3 colunas no tablet */
+    .servicos-lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Exemplo: Portfólio com gap maior */
+    .portfolio-grid {
+        gap: 30px;
+    }
+}
+
+
+/* --- BREAKPOINT PARA DESKTOPS (Largura mínima de 1024px) --- */
+@media (min-width: 1024px) {
+    
+    /* Regras para desktops, ajustando tamanhos de fonte e margens */
+
+    /* Exemplo: Mais espaço entre o texto na seção Sobre */
+    .sobre {
+        gap: 5rem;
+        padding: 8vw 6vw;
+    }
+    
+    /* Exemplo: Títulos maiores no desktop */
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .servicos-lista {
+        /* Força as colunas a serem apenas 1 em telas pequenas */
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 600px) {
+    .diferenciais {
+        /* Mude o grid 2x2 para 1 coluna */
+        grid-template-columns: 1fr;
+        gap: 1.5rem; /* Reduza o espaço */
+    }
+    /* Opcional: Reduza o tamanho da bolinha em telas muito pequenas */
+    .icone-container {
+        width: 50px; 
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-grid,
+    .depoimentos-lista {
+        /* Passa de 3 colunas para 2 colunas */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .portfolio-grid,
+    .depoimentos-lista {
+        /* Em telas de celular muito estreitas, mude para 1 coluna */
+        grid-template-columns: 1fr; 
+    }
+}
