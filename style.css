@@ -180,6 +180,11 @@ header.hero {
   filter: grayscale(1) contrast(1.1);
 }
 
+.sobre-imagem img:hover {
+  filter: none;
+  transition: 500ms ease-in-out;
+}
+
 /* Serviços */
 .servicos {
   padding: 6vw 4vw;
@@ -274,6 +279,13 @@ header.hero {
     filter: grayscale(1) contrast(1.1);
 }
 
+.portfolio-item:hover img {
+    filter: none;
+    transition: 500ms ease-in-out;
+    scale: 110%;
+}
+
+/* Botão estilizado para portfólio */
 .codepen-button {
   display: block;
   cursor: pointer;
