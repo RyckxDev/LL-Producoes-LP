@@ -1,0 +1,399 @@
+/*
+  LL Produções - Estilo minimalista, monocromático e sofisticado
+  Paleta: preto, branco, cinza
+  Tipografia: Poppins, Montserrat, Inter, Sora
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&family=Sora:wght@300;400;700&display=swap');
+
+:root {
+  --preto: #0a0a0a;
+  --cinza: #222222;
+  --cinza-claro: #e5e5e5;
+  --branco: #fff;
+  --cinza-texto: #bdbdbd;
+  --fonte-principal: 'Poppins', 'Montserrat', 'Inter', 'Sora', Arial, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--preto);
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+header.hero {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('camera.jpg') center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4vw 1rem 4vw;
+  background: var(--preto);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-img {
+  width: 48px;
+  height: 48px;
+}
+.logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--branco);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+.nav-links a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: var(--cinza-texto);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 4vw;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+.btn {
+  background: var(--branco);
+  color: var(--preto);
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover {
+  background: var(--cinza-claro);
+  color: var(--preto);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--branco);
+  border: 2px solid var(--branco);
+}
+.btn-outline:hover {
+  background: var(--branco);
+  color: var(--preto);
+}
+.hero-image {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+.hero-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.1);
+}
+
+/* Sobre */
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 6vw 4vw;
+  background: var(--cinza);
+}
+.sobre-texto {
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+.sobre-texto h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.sobre-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--cinza-texto);
+}
+.diferenciais {
+  list-style: none;
+  padding: 0;
+  color: var(--branco);
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.sobre-imagem {
+  flex: 1 1 320px;
+  min-width: 220px;
+}
+.sobre-imagem img {
+  width: 100%;
+  border-radius: 12px;
+  filter: grayscale(1) contrast(1.1);
+}
+
+/* Serviços */
+.servicos {
+  padding: 6vw 4vw;
+  background: var(--preto);
+}
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+.servicos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.servico {
+  background: var(--cinza);
+  border-radius: 14px;
+  padding: 2rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icone {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  filter: invert(1);
+}
+.servico h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.servico p {
+  color: var(--cinza-texto);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.btn-servico {
+  background: transparent;
+  color: var(--branco);
+  border: 1.5px solid var(--branco);
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-servico:hover {
+  background: var(--branco);
+  color: var(--preto);
+}
+
+/* Portfólio */
+.portfolio {
+  padding: 6vw 4vw;
+  background: var(--cinza);
+}
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.1);
+}
+
+/* Depoimentos */
+.depoimentos {
+  padding: 6vw 4vw;
+  background: var(--preto);
+}
+.depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+.depoimentos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.depoimento {
+  background: var(--cinza);
+  color: var(--branco);
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 400px;
+  font-size: 1.1rem;
+  font-style: italic;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.depoimento.vazio {
+  color: var(--cinza-texto);
+  text-align: center;
+  font-style: normal;
+}
+
+/* Contato */
+.contato {
+  padding: 6vw 4vw;
+  background: var(--cinza);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 320px;
+  min-width: 260px;
+}
+.contato-form input,
+.contato-form textarea {
+  background: var(--preto);
+  color: var(--branco);
+  border: 1.5px solid var(--cinza-claro);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-family: var(--fonte-principal);
+  resize: none;
+}
+.contato-form button {
+  align-self: flex-start;
+}
+.contato-info {
+  flex: 1 1 220px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--cinza-texto);
+  font-size: 1rem;
+}
+
+/* Rodapé */
+.footer {
+  background: var(--preto);
+  color: var(--branco);
+  padding: 2.5rem 4vw 1.2rem 4vw;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 1px solid var(--cinza);
+}
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.footer-links a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: var(--cinza-texto);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .hero-content {
+    max-width: 100%;
+    padding: 6vw 4vw;
+  }
+  .sobre, .contato {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem 2vw;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .servicos-lista, .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* animações removidas para manter estilo simples */
