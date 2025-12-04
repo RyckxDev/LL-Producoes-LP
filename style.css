@@ -101,6 +101,7 @@ header.hero {
   gap: 1rem;
   margin-bottom: 2rem;
   justify-content: center;
+  align-items: center;
 }
 .btn {
   background: var(--branco);
@@ -393,32 +394,66 @@ header.hero {
   padding: 6vw 4vw;
   background: var(--preto);
 }
+
 .depoimentos h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
   font-weight: 700;
+  color: var(--branco);
 }
+
 .depoimentos-lista {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .depoimento {
   background: var(--cinza);
   color: var(--branco);
-  border-radius: 10px;
-  padding: 2rem 1.5rem;
-  min-width: 220px;
-  max-width: 400px;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.estrelas {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  filter: grayscale(0) brightness(200%);
+}
+
+.depoimento p {
   font-size: 1.1rem;
   font-style: italic;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  color: var(--branco);
+
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
-.depoimento.vazio {
+
+.cliente-info {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.cliente-nome {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--branco);
+}
+
+.cliente-empresa {
+  font-size: 0.9rem;
   color: var(--cinza-texto);
-  text-align: center;
-  font-style: normal;
+  display: block;
+  margin-top: 0.2rem;
 }
 
 /* Contato */
