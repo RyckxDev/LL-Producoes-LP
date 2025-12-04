@@ -239,6 +239,13 @@ header.hero {
   font-weight: 700;
   text-align: center;
 }
+
+.servicos p {
+  text-align: center;
+  color: var(--cinza-texto);
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
 .servicos-lista {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
