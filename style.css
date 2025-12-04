@@ -25,7 +25,7 @@ html, body {
 }
 
 header.hero {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('camera.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('img/camera.jpg') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
