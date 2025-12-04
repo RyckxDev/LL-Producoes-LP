@@ -266,8 +266,7 @@ header.hero {
 }
 
 .portfolio-item {
-    aspect-ratio: 4 / 3;
-    border-radius: 8px;
+    aspect-ratio: 4 / 4;
     overflow: hidden;
     text-decoration: none;
     display: block;
@@ -277,7 +276,7 @@ header.hero {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    
     filter: grayscale(1) contrast(1.1);
 }
 
