@@ -533,8 +533,11 @@ header.hero {
 }
 /* twitter*/
 .containerTwo:hover {
-  background-color: #00acee;
+  background-color: #E61A1B;
   transition-duration: .3s;
+}
+.containerTwo svg {
+  width: 26px;
 }
 /* linkdin*/
 .containerThree:hover {
