@@ -531,9 +531,9 @@ header.hero {
   background-color: #d62976;
   transition-duration: .3s;
 }
-/* twitter*/
+/* gmail*/
 .containerTwo:hover {
-  background-color: #00acee;
+  background-color: #E61A1B;
   transition-duration: .3s;
 }
 /* linkdin*/
@@ -543,7 +543,7 @@ header.hero {
 }
 /* Whatsapp*/
 .containerFour:hover {
-  background-color: #128C7E;
+  background-color: #25d366;
   transition-duration: .3s;
 }
 
@@ -554,6 +554,10 @@ header.hero {
 
 .socialSvg {
   width: 17px;
+}
+
+.containerTwo svg {
+  width: 26px;
 }
 
 .socialSvg path {
