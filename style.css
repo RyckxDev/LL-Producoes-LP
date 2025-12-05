@@ -13,9 +13,18 @@
   --cinza-texto: #bdbdbd;
   --fonte-principal: "Poppins", "Montserrat", "Inter", "Sora", Arial, sans-serif;
 }
+<<<<<<< HEAD
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+=======
 html {
     scroll-behavior: smooth;
 }
+>>>>>>> 38d83e0ed3a000c5d40d6d1a70d145567f69d7db
 html,
 body {
   margin: 0;
@@ -127,8 +136,8 @@ header.hero {
   border: 2px solid var(--branco);
 }
 .btn-outline:hover {
-  background: var(--branco);
-  color: var(--preto);
+  background: #25d366;
+  color: var(--branco);
 }
 .hero-image {
   margin-top: 2rem;
@@ -290,6 +299,7 @@ header.hero {
   font-weight: 700;
   text-decoration: none;
   margin-top: auto;
+  
 }
 .btn-servico:hover {
   background: var(--branco);
