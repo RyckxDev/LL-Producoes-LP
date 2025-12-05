@@ -3,6 +3,7 @@
   Paleta: preto, branco, cinza
   Tipografia: Poppins, Montserrat, Inter, Sora
 */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&family=Sora:wght@300;400;700&display=swap");
 
 :root {
@@ -13,18 +14,11 @@
   --cinza-texto: #bdbdbd;
   --fonte-principal: "Poppins", "Montserrat", "Inter", "Sora", Arial, sans-serif;
 }
-<<<<<<< HEAD
 
-html{
-  scroll-behavior: smooth;
-}
-
-
-=======
 html {
     scroll-behavior: smooth;
 }
->>>>>>> 38d83e0ed3a000c5d40d6d1a70d145567f69d7db
+
 html,
 body {
   margin: 0;
@@ -558,6 +552,59 @@ header.hero {
 .footer-links a:hover {
   color: var(--cinza-texto);
 }
+
+/* Botão personalizado */ 
+button {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #25d366;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #25d366;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  width: max-content;
+}
+
+button span {
+  margin: 10px;
+}
+
+button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+button:hover {
+  color: #fff;
+  border: 1px solid #25d366;
+}
+
+button:hover::before {
+  box-shadow: inset 0 0 0 10em #25d366;
+}
+
 
 /* Responsivo */
 @media (max-width: 900px) {
