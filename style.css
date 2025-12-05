@@ -536,6 +536,9 @@ header.hero {
   background-color: #E61A1B;
   transition-duration: .3s;
 }
+.containerTwo svg {
+  width: 26px;
+}
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
