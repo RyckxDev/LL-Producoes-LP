@@ -13,18 +13,10 @@
   --cinza-texto: #bdbdbd;
   --fonte-principal: "Poppins", "Montserrat", "Inter", "Sora", Arial, sans-serif;
 }
-<<<<<<< HEAD
-
 html{
   scroll-behavior: smooth;
 }
 
-
-=======
-html {
-    scroll-behavior: smooth;
-}
->>>>>>> 38d83e0ed3a000c5d40d6d1a70d145567f69d7db
 html,
 body {
   margin: 0;
