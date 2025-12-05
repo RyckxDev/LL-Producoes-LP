@@ -13,12 +13,9 @@
   --cinza-texto: #bdbdbd;
   --fonte-principal: "Poppins", "Montserrat", "Inter", "Sora", Arial, sans-serif;
 }
-
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
-
-
 html,
 body {
   margin: 0;
@@ -130,8 +127,8 @@ header.hero {
   border: 2px solid var(--branco);
 }
 .btn-outline:hover {
-  background: #25d366;
-  color: var(--branco);
+  background: var(--branco);
+  color: var(--preto);
 }
 .hero-image {
   margin-top: 2rem;
@@ -293,7 +290,6 @@ header.hero {
   font-weight: 700;
   text-decoration: none;
   margin-top: auto;
-  
 }
 .btn-servico:hover {
   background: var(--branco);
