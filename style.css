@@ -27,6 +27,8 @@ body {
   font-family: var(--fonte-principal);
   font-weight: 300;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 header.hero {
@@ -232,6 +234,79 @@ header.hero {
   transition: 500ms ease-in-out;
 }
 
+/* Pacotes */
+.pacotes {
+  padding: 6vw 4vw;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pacotes h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pacotes p {
+  text-align: center;
+  color: var(--cinza-texto);
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+
+
+.pacotes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.pacote-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.pacotes-item {
+  aspect-ratio: 4 / 4;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.pacotes-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btnp {
+  background: var(--branco);
+  color: var(--preto);
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+
+
 /* Serviços */
 .servicos {
   padding: 6vw 4vw;
@@ -322,10 +397,12 @@ header.hero {
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 15px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 40px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .portfolio-item {
@@ -702,6 +779,9 @@ header.hero {
         /* Força as colunas a serem apenas 1 em telas pequenas */
         grid-template-columns: 1fr; 
     }
+    .pacotes-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
@@ -729,5 +809,15 @@ header.hero {
     .depoimentos-lista {
         /* Em telas de celular muito estreitas, mude para 1 coluna */
         grid-template-columns: 1fr; 
+    }
+    .pacotes-grid,
+    .pacotes-buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .pacotes-grid {
+        grid-template-columns: 1fr;
     }
 }
