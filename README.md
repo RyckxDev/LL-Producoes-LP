@@ -47,18 +47,6 @@ LL-Producoes-LP/
 
 ---
 
-## 🚀 Como Visualizar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/RyckxDev/LL-Producoes-LP.git
-   ```
-2. Abra o arquivo `index.html` diretamente no seu navegador.
-
-Não é necessário instalar dependências ou configurar ambiente.
-
----
-
 ## 👨‍💻 Autor
 
 Desenvolvido por [RyckxDev](https://github.com/RyckxDev) e [Thiagomagalhaeslucio](https://github.com/Thiagomagalhaeslucio).
